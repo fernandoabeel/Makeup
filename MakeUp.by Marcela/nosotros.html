@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosotros - MAKEUP BY MARCELA </title>
+
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="index.css"> <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <style>
+        /* Estilos específicos para la sección "Nuestra Filosofía" (pestañas) */
+        .philosophy-nav .nav-link {
+            border: 1px solid var(--primary-color, #d4afb9);
+            color: var(--primary-color, #d4afb9);
+            margin: 0 px;
+            border-radius: 50px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            padding: 10px 20px;
+        }
+
+        .philosophy-nav .nav-link.active {
+            background-color: var(--primary-color, #d4afb9);
+            color: #fff;
+            box-shadow: 0 4px 15px rgba(212, 175, 185, 0.5);
+        }
+
+        .philosophy-nav .nav-link:not(.active):hover {
+            background-color: rgba(212, 175, 185, 0.1);
+        }
+
+        .tab-pane {
+            padding: 20px;
+            border-radius: 15px;
+        }
+
+        .philosophy-content {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.07);
+            min-height: 250px; /* Asegura una altura consistente */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .philosophy-content i {
+            font-size: 2.5rem;
+            color: var(--primary-color, #d4afb9);
+        }
+
+        /* Estilos para el Carrusel de Historia */
+        #historyCarousel .carousel-item img {
+            height: 500px; /* Altura fija para todas las imágenes del carrusel */
+            object-fit: cover; /* Asegura que la imagen cubra el espacio sin distorsionarse */
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        #historyCarousel .carousel-caption {
+            background-color: rgba(0, 0, 0, 0.6);
+            border-radius: 10px;
+            padding: 15px;
+            bottom: 20px;
+            max-width: 80%; /* Ancho máximo para el caption */
+            left: 50%;
+            transform: translateX(-50%);
+            right: auto;
+        }
+        #historyCarousel .carousel-control-prev-icon,
+        #historyCarousel .carousel-control-next-icon {
+            filter: invert(1); /* Hace los iconos blancos para mejor visibilidad */
+        }
+        #historyCarousel .carousel-indicators [data-bs-target] {
+            background-color: var(--primary-color);
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-navbar-custom" id="mainNav">
+    <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+            <img src="imagenes/MARCELA MENA LOGO_Mesa de trabajo 1 copia 3.png" alt="Logo" style="width: 50px;">
+            <span class="fw-bold ms-2">MAKEUP BY MARCELA</span>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+                <li class="nav-item"><a class="nav-link" href="productosyServicios.html">Productos y Servicios</a></li>
+                <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Espacio para que el navbar fijo no tape el contenido -->
+<div style="height: 90px;"></div>
+
+  <div class="container mt-5">
+    <div class="section-header text-center mb-5">
+        <h2>Nuestra Historia</h2>
+        <p class="lead text-muted">"Más de una década transformando la belleza y formando nuevos talentos."</p>
+    </div>
+  </div>
+
+
+    <section id="quienes-somos" class="py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 mb-5 mb-lg-0">
+          <h2 class="display-5 fw-bold text-secondary mb-4">Marcela Mena – Makeup Artist</h2>
+          <p class="lead text-muted mb-4">Maquilladora profesional con más de 10 años de experiencia en la industria de la belleza. Cuenta con certificaciones internacionales y una sólida trayectoria como maquillista oficial en certámenes de renombre, incluyendo Miss Teen El Salvador durante más de tres años, así como en otros importantes concursos de belleza. Ha participado como jurado en certámenes y cabalgatas artísticas, aportando su criterio profesional y experiencia en el rubro.</p>
+          <p class="text-muted mb-4">Fundadora y directora de Marcela Mena Makeup Academy, donde ha formado a cientos de alumnos, transmitiendo su pasión, técnica y visión del maquillaje profesional a nuevas generaciones de artistas.</p>
+          <p class="text-muted">"Mi motivación para convertirme en maquilladora surgió del profundo deseo de ayudar a las personas a descubrir y resaltar su belleza única. Desde siempre me ha apasionado el arte y la expresión individual, y encontré en el maquillaje una herramienta poderosa para transformar no solo rostros, sino también emociones y confianza."</p>
+        </div>
+        <div class="col-lg-6">
+          <div id="historyCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#historyCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#historyCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#historyCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="imagenes/nosotros1.jpeg" class="d-block w-100" alt="Marcela Mena impartiendo clases">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Pasión por la enseñanza</h5>
+                  <p>Compartiendo el arte del maquillaje con futuras profesionales en la academia.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="imagenes/fotos marce.jpeg" class="d-block w-100" alt="Marcela Mena maquillando a una clienta">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Detalles que transforman</h5>
+                  <p>Creando looks personalizados que realzan la belleza natural de cada clienta.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="imagenes/imagen11.jpeg" class="d-block w-100" alt="Alumna recibiendo certificación">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Celebrando nuevos talentos</h5>
+                  <p>El orgullo de ver a nuestras alumnas alcanzar sus metas y certificarse.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#historyCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#historyCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="mision-vision-valores" class="py-5" style="background-color: #fff9f9;">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="display-5 fw-bold text-secondary">Nuestra Filosofía</h2>
+        <p class="lead text-muted mx-auto" style="max-width: 800px;">Los principios que guían nuestro trabajo y compromiso con cada cliente.</p>
+      </div>
+      
+      <ul class="nav nav-pills justify-content-center mb-4 philosophy-nav" id="philosophyTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="mision-tab" data-bs-toggle="pill" data-bs-target="#mision-content" type="button" role="tab" aria-controls="mision-content" aria-selected="true">
+            <i class="bi bi-bullseye me-2"></i>Misión
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="vision-tab" data-bs-toggle="pill" data-bs-target="#vision-content" type="button" role="tab" aria-controls="vision-content" aria-selected="false">
+            <i class="bi bi-eye me-2"></i>Visión
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="valores-tab" data-bs-toggle="pill" data-bs-target="#valores-content" type="button" role="tab" aria-controls="valores-content" aria-selected="false">
+            <i class="bi bi-star me-2"></i>Valores
+          </button>
+        </li>
+      </ul>
+
+      <div class="tab-content" id="philosophyTabContent">
+        <div class="tab-pane fade show active" id="mision-content" role="tabpanel" aria-labelledby="mision-tab">
+          <div class="philosophy-content text-center">
+            <i class="bi bi-bullseye mb-3"></i>
+            <h3 class="h4 text-secondary">Misión</h3>
+            <p class="text-muted">Realzar la belleza natural de cada mujer a través de un diseño de maquillaje profesional, único y personalizado, ofreciendo servicios de alta calidad y una atención cálida y dedicada. Al mismo tiempo, formar nuevas maquilladoras mediante cursos especializados, compartiendo conocimientos, técnicas y valores que eleven el arte del maquillaje con excelencia y pasión.</p>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="vision-content" role="tabpanel" aria-labelledby="vision-tab">
+          <div class="philosophy-content text-center">
+            <i class="bi bi-eye mb-3"></i>
+            <h3 class="h4 text-secondary">Visión</h3>
+            <p class="text-muted">Inspirar a mujeres y maquilladoras a descubrir y expresar su verdadera belleza, transformando cada rostro en una obra de arte única, y dejando una huella de confianza, pasión y empoderamiento en cada vida que tocamos.</p>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="valores-content" role="tabpanel" aria-labelledby="valores-tab">
+          <div class="philosophy-content text-center">
+            <i class="bi bi-star mb-3"></i>
+            <h3 class="h4 text-secondary">Valores</h3>
+            <p class="text-muted">
+              <strong>Excelencia:</strong> Nos esforzamos por ofrecer un servicio impecable, cuidando cada detalle.<br>
+              <strong>Creatividad:</strong> Innovamos constantemente para mantenernos a la vanguardia de las tendencias.<br>
+              <strong>Formación con propósito:</strong> Enseñamos con vocación para transformar vidas a través del arte.<br>
+              <strong>Calidez y empatía:</strong> Tratamos a cada persona con respeto, cercanía y sensibilidad.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-white text-dark pt-5 pb-4 border-top">  <!-- Fondo blanco y borde superior -->
+  <div class="container">
+    <div class="row">
+      <!-- Columna 1: Logo y descripción -->
+      <div class="col-md-4 mb-4">
+        <h5 class="fw-bold mb-3 text-dark">MakeUp by Marcela</h5>  <!-- Texto oscuro -->
+        <p class="text-secondary">Redes sociales para ver más contenido.</p>  <!-- Texto gris -->
+        <!-- Redes Sociales -->
+        <div class="mt-3">
+          <a href="https://www.facebook.com/share/18sWnoVyC4/" class="text-dark me-3"><i class="bi bi-facebook fs-4"></i></a>  <!-- Iconos oscuros -->
+          <a href="https://www.instagram.com/make.upbymarcela?igsh=MWV5N3ljZmRzZ3RkNw==" class="text-dark me-3"><i class="bi bi-instagram fs-4"></i></a>
+          <a href="https://www.tiktok.com/@makeup.bymarce?_t=ZM-90B35xi5DXE&_r=1" class="text-dark me-3"><i class="bi bi-tiktok fs-4"></i></a>
+          <a href="https://wa.me/5037087-1611" class="text-dark me-3"><i class="bi bi-whatsapp fs-4"></i></a>
+        </div>
+      </div>
+
+      <div class="col-md-2 mb-4">
+        <h5 class="fw-bold mb-3 text-dark">Enlaces</h5>
+        <ul class="list-unstyled">
+          <li class="mb-2"><a href="index.html" class="text-decoration-none text-secondary">Inicio</a></li>
+          <li class="mb-2"><a href="productosyServicios.html" class="text-decoration-none text-secondary">Servicios</a></li>
+          <li class="mb-2"><a href="nosotros.html" class="text-decoration-none text-secondary">Nosotros</a></li>
+          <li class="mb-2"><a href="contacto.html" class="text-decoration-none text-secondary">Contacto</a></li>
+        </ul>
+      </div>
+
+     <!-- Columna 3: Contacto -->
+      <div class="col-md-3 mb-4">
+        <h5 class="fw-bold mb-3 text-dark">Contacto</h5>
+        <ul class="list-unstyled text-secondary">
+          <li class="mb-2"><i class="bi bi-geo-alt me-2"></i>Lourdes, Colon La Libertad</li>
+          <li class="mb-2"><i class="bi bi-telephone me-2"></i>(503) 7087-1611</li>
+          <li class="mb-2"><i class="bi bi-envelope me-2"></i>make.upbymarcelamena@gmail.com</li>
+        </ul>
+      </div>
+
+
+    <div class="border-top pt-3 mt-3 text-center text-secondary">
+      <p class="mb-0">© 2025 MakeUp by Marcela. Todos los derechos reservados.</p>
+    </div>
+      </div>
+    </footer>
+    
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  // Inicializa AOS (si lo quieres usar en otras secciones)
+  AOS.init();
+</script>
+
+</html>

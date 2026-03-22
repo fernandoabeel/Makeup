@@ -1,0 +1,275 @@
+         :root {
+            --primary-color: #d4afb9; /* Rosa suave */
+            --secondary-color: #d1a6ae; /* Rosa más oscuro */
+            --accent-color: #f8e9e9; /* Rosa muy claro */
+            --gold-color: #d4af37; /* Dorado elegante */
+            --dark-color: #5a3d3d; /* Marrón oscuro */
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Playfair Display', serif;
+        }
+        
+        body {
+            background-color: #fff9f9;
+            color: var(--dark-color);
+            line-height: 1.6;
+        }
+
+       
+
+        .content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px;
+            background-color: rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(8px);
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            font-weight: 300;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+        }
+
+        
+
+
+.navbar-light .navbar-nav .nav-link {
+  /* Estilos base (del segundo código) */
+  color: black;
+  font-weight: 500;
+  transition: all var(--transition-speed) var(--transition-timing);
+  position: relative;
+  padding: 0.5rem 1rem;
+
+  /* Estilos adicionales (del primer código) */
+  border-radius: 20px;
+  margin: 0 0.2rem; /* Espaciado entre links */
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  background: rgba(14, 13, 13, 0); /* Fondo azul transparente al hover */
+  color: var(--dark-blue); /* Mantén el color original o cámbialo si lo prefieres */
+}
+
+.bandera-en-linea {
+  width: 20px; /* Tamaño pequeño */
+  vertical-align: middle; /* Alineación con el texto */
+  margin: 0 5px; /* Espaciado */
+}
+
+/* Estilo para el contenedor del carrusel */
+.hero-image-container {
+  width: 100%;       /* Ancho completo */
+  height: 650px;     /* Altura fija (ajusta según necesites) */
+  overflow: hidden;  /* Recorta lo que sobresalga */
+}
+
+/* Estilo para las imágenes */
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Cubre el espacio sin distorsionar */
+  object-position: center; /* Enfoca el centro de la imagen */
+}
+
+.section-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        
+        .section-header h2 {
+            font-size: 2.8rem;
+            color: var(--dark-color);
+            margin-bottom: 15px;
+            position: relative;
+            display: inline-block;
+            font-weight: 600;
+        }
+        
+        .section-header h2::after {
+            content: '';
+            position: absolute;
+            width: 50%;
+            height: 2px;
+            background: var(--gold-color);
+            bottom: -10px;
+            left: 25%;
+        }
+        
+        .section-header p {
+            color: var(--dark-color);
+            font-size: 1.1rem;
+            max-width: 700px;
+            margin: 20px auto 0;
+            font-style: italic;
+        }
+        h2 {
+    font-family: "Playfair Display", serif;
+    font-style: italic;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+.btn-primary {
+    background-color: #6c757d !important; /* gris */
+    border-color: #6c757d !important;
+    color: white !important;
+}
+
+.btn-primary:hover {
+    background-color: #5a6268 !important;
+    border-color: #545b62 !important;
+}
+/* ================================
+   GLOBAL: Reemplazar azules por gris
+   ================================ */
+
+/* Textos */
+.text-primary {
+    color: #6c757d !important;
+}
+
+/* Fondos */
+.bg-primary {
+    background-color: #6c757d !important;
+}
+
+.bg-primary-subtle {
+    background-color: #e2e3e5 !important; /* gris claro */
+    color: #6c757d !important;
+}
+
+/* Bordes */
+.border-primary {
+    border-color: #6c757d !important;
+}
+
+/* Badges */
+.badge.bg-primary {
+    background-color: #6c757d !important;
+}
+
+/* Iconos que usan text-primary */
+.text-primary {
+    color: #6c757d !important;
+}
+
+/* ================================
+   BOTONES (primarios y outline)
+   ================================ */
+
+/* Botón sólido */
+.btn-primary {
+    background-color: #6c757d !important;
+    border-color: #6c757d !important;
+    color: #fff !important;
+}
+
+.btn-primary:hover {
+    background-color: #5a6268 !important;
+    border-color: #545b62 !important;
+}
+
+/* Botón contorneado */
+.btn-outline-primary {
+    color: #6c757d !important;
+    border-color: #6c757d !important;
+}
+
+.btn-outline-primary:hover {
+    background-color: #6c757d !important;
+    color: white !important;
+    border-color: #6c757d !important;
+}
+/* Fondo gris claro del navbar */
+.bg-navbar-custom {
+    background-color: #f2f2f2 !important; /* gris suave */
+    border-bottom: 1px solid #e0e0e0;
+}
+
+/* Links del navbar */
+.navbar .nav-link {
+    color: #444 !important;
+    font-weight: 500;
+}
+
+.navbar .nav-link:hover {
+    color: #6c757d !important; /* gris más oscuro */
+}
+
+/* Link activo */
+.navbar .nav-link.active {
+    color: #000 !important;
+    font-weight: 600;
+}
+
+/* Ajuste general para evitar movimientos entre páginas */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Botón del carrusel - elegante y minimalista */
+.carousel-btn-overlay {
+  position: absolute;
+  bottom: 26px;               /* distancia desde la parte inferior del carrusel */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 50;                /* por encima de las imágenes */
+  text-align: center;
+  pointer-events: none;       /* evita atraparlo si quieres que solo el botón sea interactivo */
+}
+
+.carousel-btn-overlay .carousel-btn {
+  pointer-events: auto;       /* habilita clic en el botón */
+  display: inline-block;
+  padding: 10px 26px;
+  background: linear-gradient(135deg, rgba(0,0,0,0.85), rgba(60,60,60,0.9));
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 999px;
+  text-decoration: none;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, opacity 0.2s;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.35);
+  backdrop-filter: blur(4px);
+  border: 1px solid rgba(255,255,255,0.06);
+}
+
+/* Hover / focus */
+.carousel-btn-overlay .carousel-btn:hover,
+.carousel-btn-overlay .carousel-btn:focus {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.45);
+  opacity: 0.98;
+  text-decoration: none;
+  outline: none;
+}
+
+/* Ajustes responsivos */
+@media (max-width: 576px) {
+  .carousel-btn-overlay { bottom: 16px; }
+  .carousel-btn-overlay .carousel-btn { padding: 8px 18px; font-size: 15px; }
+}
+
+/* Si tu hero-image tiene un overlay oscuro claro opcional, puedes usar esto */
+.hero-image-container .hero-image-glow { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(0,0,0,0.18), rgba(0,0,0,0.26)); border-radius: .5rem; } */
+
+
+
+
+
+
+
+
+
+
+
+
+  
